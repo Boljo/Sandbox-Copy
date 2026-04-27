@@ -3,9 +3,9 @@ global without sharing class PostSandboxCopy implements SandboxPostCopy {
     private static Map<String, Schema.SObjectType> globalDescribe = Schema.getGlobalDescribe();
     
     private static List<Map<String, String>> DATA_CONFIG = new List<Map<String, String>>{
-        new Map<String, String>{'obj' => 'Account', 'extId' => 'Organisation_ID__c'},
-        new Map<String, String>{'obj' => 'Contact', 'extId' => 'koombea_dev1__Advocate_Linked_User__c'},
-        new Map<String, String>{'obj' => 'Opportunity', 'extId' => 'Opportunity_Source_External_ID__c'}
+        new Map<String, String>{'obj' => 'Account', 'extId' => 'Account_External_ID'},
+        new Map<String, String>{'obj' => 'Contact', 'extId' => 'Contact_External_ID'},
+        new Map<String, String>{'obj' => 'Opportunity', 'extId' => 'Opportunity_External_ID'}
     };
 
     global void runApexClass(SandboxContext context) {
